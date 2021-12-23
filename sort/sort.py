@@ -12,6 +12,8 @@ def __is_sorted__(l: List[int]) ->bool:
 def bogo_sort(l: List[int]) -> List[int]:
   '''
   bogo sort:  https://en.wikipedia.org/wiki/Bogosort
+  The time complexity depends on the user.
+  Only for @SNURFER the time complexity is O(1), not guaranteed for others.
   '''
   while not __is_sorted__(l):
     shuffle(l)
